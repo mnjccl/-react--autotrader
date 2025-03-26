@@ -1,3 +1,4 @@
+import "./sass/_main.scss";
 import Header from "./components/Header";
 
 function App() {
