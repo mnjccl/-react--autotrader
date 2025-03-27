@@ -5,31 +5,31 @@ function Header() {
     <header className="header">
       <div className="header__logo-box">
         <img src={logoIcon} alt="Logo Icon" className="header__icon" />
-        <p className="header__heading">
-          <span className="header__heading--first">Polovni</span>
-          <span className="header__heading--second">Automobili</span>
-        </p>
+        <h1 className="header__heading">
+          <span className="header__heading--first">Auto</span>
+          <span className="header__heading--second">Trader</span>
+        </h1>
       </div>
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item">
             <a href="#" className="header__nav-link">
-              Početna
+              Home
             </a>
           </li>
           <li className="header__nav-item">
             <a href="#" className="header__nav-link">
-              Kontakt
+              Contact
             </a>
           </li>
           <li className="header__nav-item">
             <a href="#" className="header__nav-link">
-              Uloguj se
+              Log In
             </a>
           </li>
           <li className="header__nav-item">
             <a href="#" className="header__nav-link">
-              Registruj se
+              Register
             </a>
           </li>
         </ul>
