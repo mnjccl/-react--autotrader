@@ -1,0 +1,67 @@
+.header {
+  background-color: $color-primary-light;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 6.4rem;
+  box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
+  -moz-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
+  &__logo-box {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 7rem;
+    height: auto;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 6.4rem;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    &-item {
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -3.2rem; // jer je gap=6.4rem
+        transform: translateY(-50%) rotate(25deg);
+        width: 0.2rem;
+        height: 2.8rem;
+        background: $color-white;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+
+      &:link,
+      &:visited {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-tertiary-dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.4s;
+      }
+      &:hover,
+      &:active {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
