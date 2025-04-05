@@ -1,9 +1,14 @@
 .filter {
-  height: 100%;
   width: 30%;
-  background-color: orangered;
 
-  &--form {
-    width: 80%;
+  &__form {
+    gap: 2.4rem;
+    background-color: $color-tertiary-light;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 4.8rem;
+    box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
+    -moz-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
   }
 }

@@ -1,8 +1,8 @@
 function Filter() {
   return (
     <div className="filter">
-      <form className="filter--form">
-        <h3 className="filter--heading">Filters</h3>
+      <form className="filter__form u-flex-column">
+        <h3 className="filter__heading">Filters</h3>
 
         <div className="u-flex-column">
           <label htmlFor="brand">Brand:</label>
