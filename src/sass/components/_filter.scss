@@ -11,4 +11,35 @@
     -webkit-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
     -moz-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
   }
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 0.2rem solid $color-tertiary-dark;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 0.6rem;
+    transition: border 0.2s;
+
+    &:checked {
+      border-color: $color-tertiary-dark;
+      background-color: $color-tertiary-dark;
+    }
+
+    &:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0.8rem;
+      height: 0.8rem;
+      background: $color-white;
+      border-radius: 50%;
+    }
+  }
 }
