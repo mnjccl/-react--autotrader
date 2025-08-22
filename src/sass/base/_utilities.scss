@@ -1,4 +1,11 @@
 .u-flex-column {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.u-input-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }

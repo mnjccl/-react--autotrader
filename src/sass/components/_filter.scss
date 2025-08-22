@@ -3,13 +3,46 @@
 
   &__form {
     gap: 2.4rem;
-    background-color: $color-tertiary-light;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary-light, 0.8),
+      rgba($color-tertiary-dark, 0.8)
+    );
     border-radius: 1rem;
     margin: 0 auto;
     padding: 4.8rem;
     box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
     -webkit-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
     -moz-box-shadow: 0px 1px 5px 0px rgba($color-black, 0.74);
+  }
+
+  label {
+    margin-bottom: 0.3rem;
+    transition: all 0.3s;
+
+    // THIS STYLE APPLIES WHEN INPUT IS IN FOCUS
+    &:has(+ input:focus),
+    &:has(+ select:focus) {
+      transform: scale(1.1) translateX(5%);
+    }
+  }
+
+  select,
+  input[type="number"] {
+    width: 100%;
+    background-color: $color-tertiary-lightest;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: $color-black;
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 5rem 7rem rgba($color-black, 0.2);
+    }
   }
 
   input[type="radio"] {
