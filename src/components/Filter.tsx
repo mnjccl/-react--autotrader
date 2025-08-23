@@ -84,8 +84,16 @@ function Filter() {
           </label>
         </div>
 
-        <button type="submit">Apply Filters</button>
-        <button type="button">Reset</button>
+        <button
+          type="submit"
+          className="btn btn-orange"
+          onClick={(e) => e.preventDefault()}
+        >
+          Apply
+        </button>
+        <button type="button" className="btn">
+          Reset
+        </button>
       </form>
     </div>
   );

@@ -1,0 +1,36 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.8rem;
+    transition: all 0.3s;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 3.6rem 4.6rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &-orange {
+    background-color: $color-secondary;
+    color: $color-tertiary-dark;
+  }
+
+  &-white {
+    background-color: $color-primary-lightest;
+    color: $color-tertiary-dark;
+  }
+}
