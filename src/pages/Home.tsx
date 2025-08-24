@@ -6,10 +6,10 @@ function Home() {
   return (
     <section className="section--home">
       <Filter />
-      <div className="u-flex-column">
+      <main>
         <Search />
         <Ads />
-      </div>
+      </main>
     </section>
   );
 }

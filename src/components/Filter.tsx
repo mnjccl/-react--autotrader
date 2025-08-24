@@ -1,6 +1,6 @@
 function Filter() {
   return (
-    <div className="filter">
+    <aside className="filter">
       <form className="filter__form u-flex-column">
         <h3 className="filter__heading">Filters</h3>
 
@@ -95,7 +95,7 @@ function Filter() {
           Reset
         </button>
       </form>
-    </div>
+    </aside>
   );
 }
 
