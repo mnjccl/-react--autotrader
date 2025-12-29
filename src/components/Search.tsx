@@ -1,5 +1,12 @@
+import { Search as SearchEmoji } from "react-ionicons";
+
 function Search() {
-  return <div className="search">Search</div>;
+  return (
+    <>
+      <SearchEmoji className="search-emoji" />
+      <input className="search" type="text" placeholder="Search ads..."></input>
+    </>
+  );
 }
 
 export default Search;

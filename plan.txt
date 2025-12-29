@@ -1,0 +1,38 @@
+FUNKCIONALNOSTI
+
+- login
+- registracija - ime i prezime, lokacija, email, br. telefona, sifra, potvrda sifre - ?? pomocu gmail-a i fb-a
+- nalog (ime i prezime, lokacija, email, br. telefona, datum kreiranja naloga, ocjena i komentar, istorija aktivnosti) - 3 taba, licne inf., komentari, istorija
+- postavi oglas
+- inbox
+-- ?? newsletter
+
+KARTICE
+
+--index ili početna
+  - filteri (marka, model, godiste, cijena od do, gorivo, broj vrata, zamjena)
+  - oglasi - na vrhu searchbar, na dnu pagination - ako korisnik nije ulogovan, klikom na oglas desava se redirect na registraciju 
+-- kontakt 
+-- registracija i login ako nema naloga
+-- profil i inbox ako ima naloga
+
+
+OGLAS
+
+- slike
+- marka
+- model
+- kubikaza
+- godiste
+- kilometraza
+- registracija
+- gorivo (dizel, benzin, benzin/plin)
+- broj vrata (3, 5)
+- karoserija
+- cijena
+- zamjena
+- mijenjač
+- klima
+- datum kreiranja oglasa
+- dodatne informacije
+
