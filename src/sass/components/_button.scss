@@ -1,3 +1,5 @@
+@use "../index" as g;
+
 .btn {
   &,
   &:link,
@@ -16,7 +18,7 @@
 
   &:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 3.6rem 4.6rem rgba($color-black, 0.2);
+    box-shadow: 0 3.6rem 4.6rem rgba(g.$color-black, 0.2);
   }
 
   &:active,
@@ -25,12 +27,12 @@
   }
 
   &-orange {
-    background-color: $color-secondary;
-    color: $color-tertiary-dark;
+    background-color: g.$color-secondary;
+    color: g.$color-tertiary-dark;
   }
 
   &-white {
-    background-color: $color-primary-lightest;
-    color: $color-tertiary-dark;
+    background-color: g.$color-primary-lightest;
+    color: g.$color-tertiary-dark;
   }
 }

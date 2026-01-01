@@ -1,14 +1,13 @@
-@import "abstracts/variables";
+@use "index" as g;
 
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
 
-@import "components/button";
-@import "components/filter";
-@import "components/ads";
-@import "components/search";
+@use "components/button";
+@use "components/filter";
+@use "components/ads";
+@use "components/search";
 
-@import "layout/header";
-
-@import "pages/home";
+@use "layout/header";
+@use "pages/home";
